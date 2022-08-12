@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: "https://timaries.github.io/Paradiso_API/",
+  apiUrl: "http://localhost:3000/",
   firebase: {
     apiKey: "AIzaSyDv7n8owwpGuZXOU39ApQa4FueElFC5s9E",
     authDomain: "paradiso-89eab.firebaseapp.com",
