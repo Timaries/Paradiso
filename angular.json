@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "paradiso",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -100,8 +100,23 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "f7404d7e-3f63-4a67-ae5f-546904b45ea0",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }

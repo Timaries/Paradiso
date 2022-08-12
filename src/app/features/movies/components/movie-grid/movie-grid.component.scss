@@ -1,0 +1,41 @@
+.movie_container {
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  min-width: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie_content {
+  width: 210px;
+  height: 400px;
+  flex-direction: column;
+  margin-top: 15px;
+  background-color: rgb(48, 48, 48);
+}
+
+.movie_title {
+  font-size: 1.1rem;
+  color: rgb(216, 216, 216);
+  margin: 5px 10px 5px 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.movie_title:hover {
+    color: rgb(253, 56, 56);
+    transition: 0.3s;
+    
+}
+
+.date {
+  font-size: 0.8rem;
+  color: rgb(216, 216, 216);
+  margin: 5px 10px 5px 10px;
+}
+
+.img {
+  cursor: pointer;
+}

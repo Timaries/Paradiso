@@ -1,0 +1,17 @@
+<div class="movie_container">
+  <div
+    class="movie_content"
+    (click)="seeMore(movies)"
+    *ngFor="let movies of moviePost"
+  >
+    <img
+      class="img"
+      src="{{ movies.img }}"
+      alt="{{ movies.title }}"
+      height="300px"
+      width="210px"
+    />
+    <div class="movie_title">{{ movies.title }}</div>
+    <div class="date">{{ movies.date }}</div>
+  </div>
+</div>

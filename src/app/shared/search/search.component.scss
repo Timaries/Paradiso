@@ -1,0 +1,24 @@
+.searchbar {
+  display: flex;
+  margin: auto;
+  max-width: 1100px;
+  min-width: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0px 20px 0px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(34, 34, 34);
+  border: none;
+}
+.bg2 {
+  background-color: rgb(39, 39, 39);
+}
+.search:focus {
+  outline: none;
+}

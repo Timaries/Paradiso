@@ -1,0 +1,15 @@
+<div class="popup_container">
+  <h1>sign in</h1>
+  <input type="text" placeholder="User Name" name="" id="" #userName required />
+  <input
+    type="password"
+    placeholder="Password"
+    name=""
+    id=""
+    #password
+    required
+  />
+  <button (click)="authService.signIn(userName.value, password.value)">
+    log in
+  </button>
+</div>
