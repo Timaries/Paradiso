@@ -1,0 +1,21 @@
+<div class="bg">
+  <div class="container">
+    <div class="logo" [routerLink]="['']">Paradiso</div>
+    <div class="social">
+      <a href="https://github.com/Timaries" target="_blank">{{
+        "GITHUB" | translate
+      }}</a>
+      <a href="https://github.com/Timaries/Paradiso" target="_blank"
+        >{{"SOURCE_CODE" | translate}}</a
+      >
+      <a href="https://www.linkedin.com/in/kakushadzet/" target="_blank"
+        >LINKEDIN</a
+      >
+    </div>
+    <div class="changelanguage">
+      <div class="lagunge" (click)="changeLanguage()">
+        {{ "LANGUAGE" | translate }}
+      </div>
+    </div>
+  </div>
+</div>

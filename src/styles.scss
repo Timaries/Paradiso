@@ -1,5 +1,4 @@
-
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 @include mat.core();
 
 $Paradiso-primary: mat.define-palette(mat.$indigo-palette);
@@ -7,29 +6,31 @@ $Paradiso-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 $Paradiso-warn: mat.define-palette(mat.$red-palette);
 
-$Paradiso-theme: mat.define-light-theme((
-  color: (
-    primary: $Paradiso-primary,
-    accent: $Paradiso-accent,
-    warn: $Paradiso-warn,
+$Paradiso-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $Paradiso-primary,
+      accent: $Paradiso-accent,
+      warn: $Paradiso-warn,
+    ),
   )
-));
+);
 
 @include mat.all-component-themes($Paradiso-theme);
 
-html,
-body {
-  height: 100%;
-  background-color: rgb(34, 34, 34);
-  width: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+@font-face {
+  font-family: alkgeo;
+  src: url(/assets/fonts/alk-sanet.ttf);
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  margin: 0;
+  // height: 100%;
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  font-family: Roboto, alkgeo, "Helvetica Neue", sans-serif;
+}
 
 .mat-dialog-container {
   padding: 0px 0px 0px 0px;
@@ -37,5 +38,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-color: rgb(34, 34, 34);
 }
 .cdk-overlay-backdrop {
-  background-color: rgba(0, 0, 0, 0.650);
+  background-color: rgba(0, 0, 0, 0.65);
+}
+.mat-body,
+.mat-body-1,
+.mat-typography .mat-body,
+.mat-typography .mat-body-1,
+.mat-typography {
+  font-family: Roboto, "alkgeo";
 }

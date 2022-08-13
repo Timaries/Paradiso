@@ -2,12 +2,12 @@
   <div class="header_container">
     <div class="logo" [routerLink]="['']">Paradiso</div>
     <div class="navigation">
-      <span [routerLink]="['']">HOME PAGE</span>
-      <span [routerLink]="['']">MOVIES</span>
-      <span [routerLink]="['']">TV SHOWS</span>
+      <span [routerLink]="['']">{{"HOME" | translate}}</span>
+      <span [routerLink]="['']">{{"MOVIES" | translate}}</span>
+      <span [routerLink]="['']">{{"TVSHOWS" | translate}}</span>
     </div>
     <div class="auth">
-      <div class="login" (click)="openDialog()" >Log in</div>
+      <div class="login" (click)="openDialog()" >{{"LOGIN" | translate}}</div>
     </div>
   </div>
 </div>

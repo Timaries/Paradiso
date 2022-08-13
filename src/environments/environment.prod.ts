@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: "http://localhost:3000/",
+  apiUrl: "https://api.npoint.io/31abdc3fd04edf934ab1/",
   firebase: {
     apiKey: "AIzaSyDv7n8owwpGuZXOU39ApQa4FueElFC5s9E",
     authDomain: "paradiso-89eab.firebaseapp.com",

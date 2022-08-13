@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { routes2 } from './movies-routing.module';
 import { DataGridComponent } from './movie-data/components/data-grid/data-grid.component';
 import { DataLogComponent } from './movie-data/container/data-log/data-log.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { DataLogComponent } from './movie-data/container/data-log/data-log.compo
     DataGridComponent,
     DataLogComponent,
   ],
-  imports: [CommonModule, SharedModule, RouterModule.forChild(routes2)],
+  imports: [CommonModule, SharedModule, RouterModule.forChild(routes2), TranslateModule],
   exports: [RouterModule, MovieListComponent, MovieGridComponent],
 })
 export class MoviesModule {}

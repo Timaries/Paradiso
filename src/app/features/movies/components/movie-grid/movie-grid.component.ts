@@ -8,11 +8,10 @@ import { ApiService } from 'src/app/shared/services/api.service';
   templateUrl: './movie-grid.component.html',
   styleUrls: ['./movie-grid.component.scss'],
 })
-export class MovieGridComponent implements OnInit {
+export class MovieGridComponent {
   @Input() moviePost: MovieList[] = [];
   constructor(private movie2: ApiService, private router: Router) {}
 
-  ngOnInit(): void {}
   seeMore(movie: MovieList) {
     this.movie2.movieData = movie
     this.router.navigate(['/movie', movie.id, movie.title,]);
